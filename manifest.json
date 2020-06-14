@@ -1,0 +1,33 @@
+{
+
+  "manifest_version": 2,
+  "name": "Extension_for_test",
+  "version": "0.1",
+ 
+  "description": "Модульное расширение для тестирования новых функций",
+  "icons": {
+    "48": "icons/extension_icons/gagarin_48.png",
+    "96": "icons/extension_icons/gagarin_96.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "legio1389@yandex.ru",
+      "strict_min_version": "45.0"
+    }
+  },
+
+    "browser_action": {
+    "default_icon": "icons/extension_icons/gagarin_32.png" 
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+} 
